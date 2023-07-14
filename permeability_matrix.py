@@ -37,7 +37,7 @@ phi_y = st.sidebar.number_input("Porosity in the y-axis", min_value=0.0, max_val
 phi_z = st.sidebar.number_input("Porosity in the z-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.4)
 
 # User input for base permeability constant and exponent
-B = st.sidebar.number_input("Base Permeability Constant", min_value=0.0, value=1.0)
+B = st.sidebar.number_input("Base Permeability Constant", min_value=1.0E-11, value=1.0E-9, format='%.2e', step=1.0E-9)
 m = st.sidebar.number_input("Exponent", min_value=0.0, value=2.0)
 
 # User input for colormap
