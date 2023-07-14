@@ -41,7 +41,7 @@ B = st.sidebar.number_input("Base Permeability Constant", min_value=0.0, value=1
 m = st.sidebar.number_input("Exponent", min_value=0.0, value=2.0)
 
 # User input for colormap
-cmap_name = st.selectbox("Select a color map", ['jet', 'flag', 'prism', 'ocean', 'gist_earth', 'terrain',
+cmap_name = st.sidebar.selectbox("Select a color map", ['jet', 'flag', 'prism', 'ocean', 'gist_earth', 'terrain',
                       'gist_stern', 'gnuplot', 'gnuplot2', 'CMRmap',
                       'cubehelix', 'brg', 'gist_rainbow', 'rainbow', 
                       'turbo', 'nipy_spectral', 'gist_ncar', 'Pastel1', 'Pastel2',
