@@ -32,13 +32,13 @@ def ellips2cart(r, phi, tta, a, b, c):
 st.title("Orthotropic Permeability Tensor Visualization")
 
 # User input for porosity values
-phi_x = st.number_input("Porosity in the x-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.2)
-phi_y = st.number_input("Porosity in the y-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.3)
-phi_z = st.number_input("Porosity in the z-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.4)
+phi_x = st.sidebar.number_input("Porosity in the x-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.2)
+phi_y = st.sidebar.number_input("Porosity in the y-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.3)
+phi_z = st.sidebar.number_input("Porosity in the z-axis", min_value=0.0, max_value=1.0, step=0.01, value=0.4)
 
 # User input for base permeability constant and exponent
-B = st.number_input("Base Permeability Constant", min_value=0.0, value=1.0)
-m = st.number_input("Exponent", min_value=0.0, value=2.0)
+B = st.sidebar.number_input("Base Permeability Constant", min_value=0.0, value=1.0)
+m = st.sidebar.number_input("Exponent", min_value=0.0, value=2.0)
 
 # User input for colormap
 cmap_name = st.selectbox("Select a color map", ['jet', 'flag', 'prism', 'ocean', 'gist_earth', 'terrain',
