@@ -123,7 +123,7 @@ ax.set_title('Orthotropic Permeability Tensor')
 #)
 # Add the colorbar
 cbar = fig.colorbar(cm.ScalarMappable(norm=norm, cmap=cmap))
-cbar.set_label('Permeability', fontsize=12)
+cbar.set_label('Permeability (m$^2$)', fontsize=12)
 cbar.ax.tick_params(labelsize=10)
 
 
